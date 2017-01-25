@@ -25,10 +25,14 @@ describe('whoami api', function() {
          .get(baseURL + 'whoami')
          .set('user-agent', 'Chrome/42.42')
          .end(function(err, res) {
-           const headers = JSON.parse(res.text);
+           const result = JSON.parse(res.text);
            assert.ifError(err, 'Server responds');
-           assert.property(headers, 'user-agent');
-           assert.equal(headers['user-agent'], 'Chrome/42.42');
+           assert.property(result, 'headers');
+           assert.property(result.headers, 'user-agent');
+           assert.property(result, 'client');
+           assert.property(result.client, 'ip');
+           assert.property(result.client, 'port');
+           assert.equal(result.headers['user-agent'], 'Chrome/42.42');
            done();
          });
      }
