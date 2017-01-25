@@ -1,0 +1,8 @@
+<ul>
+  <ul ng-repeat="(subheading, sublist) in data">
+    {{ subheading }}
+    <li ng-repeat="(name, value) in sublist">
+      {{ name }} : {{ value }}
+    </li>
+  </ul>
+</ul>
