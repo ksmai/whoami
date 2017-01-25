@@ -1,1 +1,1 @@
-<ul><ul ng-repeat="(subheading, sublist) in data">{{ subheading }}<li ng-repeat="(name, value) in sublist">{{ name }} : {{ value }}</li></ul></ul>
+<div class=container-fluid><div class=row><div ng-repeat="(subheading, sublist) in data" class="col-xs-12 col-md-offset-1 col-md-10"><h1>{{ subheading }}</h1><table class="table table-resposive table-hover table-striped"><tr ng-repeat="(name, value) in sublist"><th>{{ name }}</th><td>{{ value }}</td></tr></table></div></div></div>
