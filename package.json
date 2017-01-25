@@ -4,6 +4,7 @@
   "description": "http header parser",
   "main": "index.js",
   "scripts": {
+    "build": "gulp build",
     "start": "node index.js",
     "test": "gulp test",
     "watch": "gulp watch",
