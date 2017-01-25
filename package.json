@@ -4,7 +4,10 @@
   "description": "http header parser",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "gulp test",
+    "watch": "gulp watch",
+    "eslint": "eslint"
   },
   "keywords": [],
   "author": "ksmai",
