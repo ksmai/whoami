@@ -7,5 +7,9 @@ module.exports = {
          }, function(err) {
            $scope.data = {error: err.toString()};
          });
+
+    setTimeout(function() {
+      $scope.$emit('whoamiController');
+    }, 0);
   }]
 };

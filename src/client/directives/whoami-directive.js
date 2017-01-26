@@ -3,7 +3,7 @@ module.exports = {
   cb: function() {
     return {
       controller: 'whoamiController',
-      templateUrl: 'templates/whoami-template.html'
+      templateUrl: '/templates/whoami-template.html'
     };
   }
 }
